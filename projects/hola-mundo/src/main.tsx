@@ -1,9 +1,10 @@
 import React from 'react';
-import ReactDOM from 'react-dom/client'
+import ReactDOM from 'react-dom/client';
+import { App } from './App.jsx';
+import './index.css';
 
-const root = ReactDOM.createRoot(document.getElementById('root') as Element);
+const root = ReactDOM.createRoot(document.getElementById('root') as HTMLElement);
+
 root.render(
-    <React.Fragment>
-        <button>Click me</button>
-    </React.Fragment>
+    <App />
 );
