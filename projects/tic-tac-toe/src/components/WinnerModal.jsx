@@ -1,4 +1,8 @@
-export function WinnerModal({winner, resetGame}) {
+import { Square } from './Square'
+
+import PropTypes from 'prop-types';
+
+export function WinnerModal({ winner, resetGame }) {
     if (winner === null) return null
     
     const winnerText = winner === false ? 'Draw' : `Winner ${winner}`
@@ -23,4 +27,7 @@ export function WinnerModal({winner, resetGame}) {
     )
 }
 
-
+WinnerModal.propTypes = {
+    winner: PropTypes.any.isRequired,
+    resetGame: PropTypes.func.isRequired,
+};

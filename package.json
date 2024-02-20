@@ -14,5 +14,8 @@
   },
   "slintConfig": {
     "extends": "./node_modules/standard/eslintrc.json"
+  },
+  "dependencies": {
+    "eslint": "^8.56.0"
   }
 }
